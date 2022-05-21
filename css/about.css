@@ -8,4 +8,20 @@
 body {
     font-family: 'Open Sans', sans-serif;
 }
+ 
+.btn-primary {
+    background-color: #2e7eed;
+}
 
+.hover-zoom {
+    height: 250px;
+    overflow: hidden;
+}
+
+.hover-zoom img {
+    transition: transform ease .5s;
+}
+
+.hover-zoom:hover img {
+    transform: scale(1.12);
+}

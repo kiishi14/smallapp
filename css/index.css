@@ -10,8 +10,6 @@ body {
 
 .navbar-link:active {
     border-top: 1px solid #2e7eed;
-
-    color: #2e7eed;
 }
 
 .navbar-nav li a {
@@ -32,15 +30,9 @@ body {
     font-size: 45px;
 }
 
-.hero-left a {
-    text-decoration: none;
-}
-
 .download-btn {
     padding: 17px 38px;
     border-radius: 3px;
-    background: #2e7eed;
-    color: #fff;
     outline: none;
 }
 
@@ -61,7 +53,7 @@ body {
 }
 
 .bg-gray {
-    background-color: #fafafa;
+    background-color: #fafafa !important;
 }
 
 #video-section {
@@ -72,8 +64,6 @@ body {
 
 .video-content {
     width: 60%;
-    margin: 0 auto;
-    text-align: center;
 }
 
 .video-content a {
@@ -89,15 +79,12 @@ body {
 .cta-links {
     margin-top: 100px;
     margin-bottom: 50px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .cta-text {
     width: 80%;
-    margin: 0 auto;
 }
 
 .bg-dark {
-    background-color: #343a40;
+    background-color: #343a40 !important;
 }
