@@ -17,6 +17,8 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
   <section id="nav">
@@ -29,10 +31,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link active navbar-link" aria-current="page" href="#">HOME</a>
+                  <a class="nav-link active navbar-link" aria-current="page" href="index.html">HOME</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link navbar-link" href="#">ABOUT US</a>
+                  <a class="nav-link navbar-link" href="about.html">ABOUT US</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link navbar-link" href="#">CONTACT US</a>
@@ -91,7 +93,7 @@
   <section id="productivity">
       <div class="container">
           <div class="row">
-              <div class="img-left col-lg-6 col-md-12">
+              <div class="img-left col-lg-6 col-md-12" data-aos="fade-right">
                   <img src="img/feature-new-01.jpg" alt="phone" class="img-fluid">
               </div>
               <div class="col-lg-6 col-md-12 text-right mt-5 py-5 align-middle">
@@ -113,9 +115,9 @@
       </div>
       <div class="container">
          <div class="row">
-             <div class="col-lg-6 col-md-12 text-right mt-5 py-5 align-middle">
+             <div class="col-lg-6 col-md-12 order-2 order-md-1 text-right mt-5 py-5 align-middle">
                  <div class="text-container mt-5">
-                     <h2 class="mb-4 fs-1">Increase your productivity with <span>Small Apps</span></h2>
+                     <h2 class="mb-4 fs-1">Increase your productivity with <span class="text-primary">Small Apps</span></h2>
                      <p class="text-secondary mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                      <p class="mb-2 fst-italic text-secondary fs-6">"InVision is a window into everything that's being designed at Twitter. It gets all of our best work in one place."</p>
                      <div class="d-flex ">
@@ -128,7 +130,7 @@
                       </div>
                   </div>
              </div>
-             <div class="img-left col-lg-6 col-md-12">
+             <div class="img-left col-lg-6 col-md-12 order-1 order-md-2" data-aos="fade-left">
                  <img src="img/feature-new-02.jpg" alt="phone" class="img-fluid">
              </div>
          </div>
@@ -145,7 +147,7 @@
                 </div>
             </div>
             <div class="row no-gutter py-5">
-                <div class="col-lg-6 py-3 me-1">
+                <div class="col-lg-6 py-3 me-1"  data-aos="fade-right">
                     <img src="img/iphone-ipad.jpg" alt="devices" class="img-fluid mt-5 ">
                 </div>
                 <div class="col-lg-5 bg-white mr-auto">
@@ -257,30 +259,100 @@
             </div>
         </div>
     </section>
-    <section id="cta" class="py-5 bg-blue">
+    <section id="cta" class="py-5 bg-blue text-white">
         <div class="container ">
-            <div class="text-center py-5">
-                <div class="cta-text">
-                    <h1>It's time to change your mind</h3>
-                    <p>Download over 2 million humans . Get Small Apps free forever! We say you won’t look back.</p>
-                </div>
-                <div class="cta-links row">
-                    <a href="#" class="me-3 col-lg-3 col-md-6"><img src="img/apple.svg" alt="apple" class="img-fluid me-2">IPHONE</a>
-                    <a href="#" class="me-3 col-lg-3 col-md-6"><img src="img/android.svg" alt="android" class="img-fluid me-2">ANDRIOD</a>
-                    <a href="#" class="me-3 col-lg-3 col-md-12"><img src="img/microsoft-alt.svg" alt="microsoft" class="img-fluid me-2">WINDOWS</a>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="text-center py-2">
+                        <div class="cta-text">
+                            <h1>It's time to change your mind</h3>
+                            <p>Download over 2 million humans . Get Small Apps free forever! We say you won’t look back.</p>
+                        </div>
+                        <div class="cta-links">
+                          <ul class="list-inline">
+                            <li class="list-inline-item mb-2"><a href="#" class="btn text-white border rounded-pill px-5 py-3"><img src="img/apple.svg" alt="apple" class="img-fluid me-2">IPHONE</a></li>
+                            <li class="list-inline-item mb-2"><a href="#" class="btn text-white border rounded-pill px-5 py-3"><img src="img/android.svg" alt="android" class="img-fluid me-2">ANDRIOD</a></li>
+                            <li class="list-inline-item mb-2"><a href="#" class="btn text-white border rounded-pill px-5 py-3"><img src="img/microsoft-alt.svg" alt="windowa" class="img-fluid me-2">WINDOWS</a></li>
+                          </ul>
+                           
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+    </section> 
     <footer id="footer" class="py-5 bg-black">
         <div class="container">
-            <div class="row">
-
+          <div class="row">
+            <div class="col-lg-4 col-md-12  col-sm-12 mt-5 mb-3">
+              <img src="img/logo-alt.png" alt="logo" class="img-fluid">
+              <div class="footer-socials">
+                <ul class="list-group list-group-horizontal">
+                  <li class="list-group-item bg-black"><a href="www.facebook.com"><img src="img/facebook.svg" alt=""></a></li>
+                  <li class="list-group-item bg-black"><a href="www.twitter.com"><img src="img/twitter.svg" alt="twitter"></a></li>
+                  <li class="list-group-item bg-black"><a href="www.instagram.com"><img src="img/instagram.svg" alt="instagram"></a></li>
+                </ul>
+              </div>
             </div>
+            <div class="col-lg-8 col-md-12 col-sm-12 mt-2">
+              <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6 mb-3">
+                  <h5 class="text-white mb-3">PRODUCT</h5>
+                  <ul class="ps-0">
+                    <li class="text-secondary list-unstyled mb-2">Teams</li>
+                    <li class="text-secondary list-unstyled mb-2">Blogs</li>
+                    <li class="text-secondary list-unstyled mb-2">FAQs</li>
+                  </ul>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 mb-3">
+                  <h5 class="text-white mb-3">RESOURCES</h5>
+                  <ul class="ps-0">
+                    <li class="text-secondary list-unstyled mb-2">Signup</li>
+                    <li class="text-secondary list-unstyled mb-2">Login</li>
+                    <li class="text-secondary list-unstyled mb-2">Blog</li>
+                  </ul>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 mb-3">
+                  <h5 class="text-white mb-3">COMPANY</h5>
+                  <ul class="ps-0">
+                    <li class="text-secondary list-unstyled mb-2">Career</li>
+                    <li class="text-secondary list-unstyled mb-2"><a href="#" class="text-decoration-none text-secondary">Contact</a></li>
+                    <li class="text-secondary list-unstyled mb-2">Investor</li>
+                    <li class="text-secondary list-unstyled mb-2">Terms</li>
+                  </ul>
+                </div>
+                <div class="col-lg-3  col-md-3  col-sm-6 mb-3">
+                  <h5 class="text-white mb-3">PRODUCT</h5>
+                  <ul class="ps-0">
+                    <li class="text-secondary list-unstyled mb-2"><a href="about.html" class="text-decoration-none text-secondary">About</a></li>
+                    <li class="text-secondary list-unstyled mb-2"><a href="#" class="text-decoration-none text-secondary">Contact</a></li>
+                    <li class="text-secondary list-unstyled mb-2">Teams</li>
+                    <li class="text-secondary list-unstyled mb-2">Privacy Policy</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
         </div>
     </footer>
+    <div class="copyright  bg-dark py-2">
+      <div class="container">
+        <div class="text-center">
+          <p class="text-secondary fst-1 mt-2">Copyright © 2022. Designed by Themefisher, Developed by <span><a href="https://www.instagram.com/therealkiishi"  class="text-decoration-none">Kiishi</a></span></p>
+        </div>
+      </div>
+    </div>
     <script src="js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+    </script>
+
     <script>
         var swiper = new Swiper(".mySwiper", {
           slidesPerView: 2,
